@@ -1,0 +1,24 @@
+
+--------for html file input this div-----------
+
+<div class="separator">2020</div>
+
+---------for style.css add this class---------
+
+.separator {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}
